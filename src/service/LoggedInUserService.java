@@ -56,9 +56,10 @@ public class LoggedInUserService {
 
             System.out.println(padding + "------------------------------------");
             System.out.printf(padding + "| Name:- %-27s |%n", s.getTitle());
-            System.out.printf(padding + "| Duration:- %-21s |%n",
+            System.out.printf(padding + "| Duration:- %-21s  |%n",
                     String.valueOf(s.getDuration()).substring(0, 3) + "s");
             System.out.printf(padding + "| Views:- %-26s |%n", s.getViews());
+            System.out.printf(padding + "| Views:- %-26s |%n", "(X)BACK");
             System.out.println(padding + "------------------------------------");
             System.out.printf(padding + "(-)PREV %-20s (+)NEXT%n", "");
 

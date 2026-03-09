@@ -28,6 +28,9 @@ public class LoggedInUserController {
                 case 2:
                     adminService.searchSong();
                     break;
+                case 3:
+                    System.out.println("WORKING");
+                    break;
 
                 case 4:
                     adminService.showSongs();

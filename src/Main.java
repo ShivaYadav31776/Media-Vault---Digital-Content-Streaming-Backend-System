@@ -1,12 +1,11 @@
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import controller.AdminController;
 import controller.UserController;
 import data.SongList;
 import model.Greetings;
-import model.Song;
+import model.TrendingSongPriorityQ;
 import service.Menu;
 
 public class Main {
@@ -18,13 +17,13 @@ public class Main {
         UserController userController = new UserController();
         SongList songList = new SongList();
         Scanner sc = new Scanner(System.in);
+        TrendingSongPriorityQ q = new TrendingSongPriorityQ();
 
         // LOGICS
         while (true) {
             greetings.welcome();
             greetings.enter();
             int input = sc.nextInt();
-
             switch (input) {
                 case 1:
                     userController.user();

@@ -62,6 +62,10 @@ public class UserController {
                     adminService.searchSong();
                     break;
 
+                case 4:
+                    userService.trendingTop10Songs();
+                    break;
+
                 case 5:
                     return;
                 default:

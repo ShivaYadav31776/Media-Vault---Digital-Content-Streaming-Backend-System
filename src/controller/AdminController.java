@@ -48,7 +48,7 @@ public class AdminController {
                     break;
 
                 case 4:
-
+                    adminService.trendingTop3Songs();
                     break;
 
                 case 5:
