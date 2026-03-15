@@ -36,12 +36,13 @@ public class AdminService {
         adminService.trendingTop3Songs();
     }
 
-    public void addSong() throws IOException {
+    public void addSong() throws IOException, InterruptedException {
         SongList songList = new SongList();
         songList.loadsongList();
         ArrayList<Song> list = new ArrayList<>();
         list = songList.getSongList();
         Song song = new Song();
+        Thread.sleep(1000);
         // -----------------------------inputs--------------------
         song.setId((list.size() + 1));
         System.out.print("                                                                      Enter Song Title:-");

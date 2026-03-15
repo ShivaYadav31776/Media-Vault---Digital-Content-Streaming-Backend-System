@@ -25,7 +25,7 @@ public class UserService {
                 // ========================user inputs======================
 
                 System.out.print(
-                                "                                                                     ## Enter Name {Eg:Abhishek}:- ");
+                                "                                                                     ## Enter Name {Eg:Tun Tun Mosi}:- ");
                 newUser.setName(sc.nextLine());
                 System.out.print(
                                 "                                                                     ## Enter Phone {Eg:89452XXXX}:- ");
@@ -39,7 +39,7 @@ public class UserService {
                 }
 
                 System.out.print(
-                                "                                                                     ## Enter Email {Eg:avi@gamil.com}:- ");
+                                "                                                                     ## Enter Email {Eg:email@gamil.com}:- ");
                 String email = sc.next();
                 if (email.endsWith(".com")) {
                         newUser.setEmail(email);
@@ -50,11 +50,11 @@ public class UserService {
                 }
 
                 System.out.print(
-                                "                                                                     ## Set Password{Eg:avi2025}:- ");
+                                "                                                                     ## Set Password{Eg:user2025}:- ");
                 newUser.setPassword(sc.next());
 
                 System.out.print(
-                                "                                                                     ## Set Id {Eg:avi_2025}:- ");
+                                "                                                                     ## Set Id {Eg:user_2025}:- ");
                 newUser.setUserId(sc.next());
                 System.out.println();
                 System.out.println(
@@ -81,10 +81,10 @@ public class UserService {
                 userList.loadUserList();
                 ArrayList<User> list = userList.getUserList();
                 System.out.print(
-                                "                                                                     ## Enter Email {Eg:avi@gamil.com}:- ");
+                                "                                                                     ## Enter Email {Eg:user@gamil.com}:- ");
                 String enteredEmail = sc.next();
                 System.out.print(
-                                "                                                                     ## Set Password{Eg:avi2025}:- ");
+                                "                                                                     ## Set Password{Eg:user2025}:- ");
                 String enteredPassword = sc.next();
                 int l = 0;
                 int h = list.size();
